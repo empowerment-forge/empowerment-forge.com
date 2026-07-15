@@ -6,24 +6,71 @@
     <title>Empowerment Forge</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            background-color: #2e2c33;
+            background: #2e2c33;
+            color: white;
 
             display: flex;
             justify-content: center;
-
             align-items: center;
+
             min-height: 100vh;
+
+            font-family:
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
         }
 
-        img {
-            max-width: 100%;         /* Prevents the image from being wider than the screen */
-            height: auto;            /* Keeps the original aspect ratio intact */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 75%;
+            max-width: 420px;
+            height: auto;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin-top: 14px;
+            font-size: 1.25rem;
+            color: #d2d2d7;
+            letter-spacing: 2px;
         }
     </style>
 </head>
+
 <body>
-    <img src="images/logo-anvil-transparent.png" alt="The Empowerment Forge">
+
+    <div class="hero">
+
+        <img src="images/logo-anvil-transparent.png"
+             alt="The Empowerment Forge">
+
+        <h1>The Empowerment Forge</h1>
+
+        <p>Build. Learn. Create.</p>
+
+    </div>
+
 </body>
 </html>
