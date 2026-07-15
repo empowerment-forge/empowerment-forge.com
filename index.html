@@ -1,76 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empowerment Forge</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            margin: 0;
-            background: #2e2c33;
-            color: white;
+      body {
+        margin: 0;
+        background: #2e2c33;
+        color: white;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            min-height: 100vh;
+        min-height: 100vh;
 
-            font-family:
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-        }
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
 
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
-        .hero img {
-            width: 75%;
-            max-width: 420px;
-            height: auto;
-            margin-bottom: 28px;
-        }
+        padding: 2rem;
+      }
 
-        h1 {
-            margin: 0;
-            font-size: 3rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
+      .hero img {
+        width: clamp(220px, 40vw, 320px);
+        height: auto;
+        margin-bottom: 36px;
+      }
 
-        p {
-            margin-top: 14px;
-            font-size: 1.25rem;
-            color: #d2d2d7;
-            letter-spacing: 2px;
-        }
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      p {
+        margin-top: 16px;
+
+        font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+
+        color: #d2d2d7;
+
+        letter-spacing: 1px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="hero">
+      <img
+        src="images/logo-anvil-transparent.png"
+        alt="The Empowerment Forge"
+      />
 
-        <img src="images/logo-anvil-transparent.png"
-             alt="The Empowerment Forge">
+      <h1>The Empowerment Forge</h1>
 
-        <h1>The Empowerment Forge</h1>
-
-        <p>Build. Learn. Create.</p>
-
+      <p>Build. Learn. Create.</p>
     </div>
-
-</body>
+  </body>
 </html>
