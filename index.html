@@ -17,7 +17,7 @@
 
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         min-height: 100vh;
 
@@ -30,7 +30,10 @@
         align-items: center;
         text-align: center;
 
-        padding: 2rem;
+        padding-top: clamp(40px, 7vh, 80px);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
       }
 
       .hero img {
