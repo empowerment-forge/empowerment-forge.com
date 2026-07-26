@@ -3,25 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empowerment Forge</title>
+    <title>The Empowerment Forge | Indiana Software Company</title>
+    <meta
+      name="description"
+      content="The Empowerment Forge, LLC is an Indiana software company building practical software, web applications, and business tools."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://empowerment-forge.com/" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/logo-anvil-transparent.png"
+    />
+    <meta name="theme-color" content="#2e2c33" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="The Empowerment Forge" />
+    <meta
+      property="og:title"
+      content="The Empowerment Forge | Indiana Software Company"
+    />
+    <meta
+      property="og:description"
+      content="An Indiana software company building practical software, web applications, and business tools."
+    />
+    <meta property="og:url" content="https://empowerment-forge.com/" />
+    <meta
+      property="og:image"
+      content="https://empowerment-forge.com/images/logo-anvil-transparent.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="The Empowerment Forge anvil logo"
+    />
+    <meta property="og:image:width" content="620" />
+    <meta property="og:image:height" content="646" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="The Empowerment Forge | Indiana Software Company"
+    />
+    <meta
+      name="twitter:description"
+      content="An Indiana software company building practical software, web applications, and business tools."
+    />
+    <meta
+      name="twitter:image"
+      content="https://empowerment-forge.com/images/logo-anvil-transparent.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="The Empowerment Forge anvil logo"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://empowerment-forge.com/#organization",
+            "name": "The Empowerment Forge, LLC",
+            "url": "https://empowerment-forge.com/",
+            "logo": "https://empowerment-forge.com/images/logo-anvil-transparent.png",
+            "email": "mailto:tony@empowerment-forge.com",
+            "description": "An Indiana software company building practical software, web applications, and business tools.",
+            "location": {
+              "@type": "Place",
+              "name": "Indiana, United States"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://empowerment-forge.com/#website",
+            "url": "https://empowerment-forge.com/",
+            "name": "The Empowerment Forge",
+            "description": "The official website of The Empowerment Forge, LLC.",
+            "publisher": {
+              "@id": "https://empowerment-forge.com/#organization"
+            },
+            "inLanguage": "en"
+          }
+        ]
+      }
+    </script>
 
     <style>
       * {
         box-sizing: border-box;
       }
 
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
+        min-height: 100vh;
         background: #2e2c33;
         color: white;
-
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-
-        min-height: 100vh;
-
         font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+
+      a {
+        color: #ffffff;
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        text-decoration-thickness: 2px;
+      }
+
+      a:focus-visible {
+        outline: 3px solid #ffffff;
+        outline-offset: 4px;
+        border-radius: 2px;
       }
 
       .hero {
@@ -29,11 +126,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-        padding-top: clamp(40px, 7vh, 80px);
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
+        padding: clamp(40px, 7vh, 80px) 2rem 2rem;
       }
 
       .hero img {
@@ -49,28 +142,120 @@
         letter-spacing: 1px;
       }
 
-      p {
-        margin-top: 16px;
-
-        font-size: clamp(1.1rem, 2.5vw, 1.45rem);
-
+      .tagline {
+        margin: 16px 0 0;
         color: #d2d2d7;
-
+        font-size: clamp(1.1rem, 2.5vw, 1.45rem);
         letter-spacing: 1px;
+      }
+
+      .content {
+        width: min(100% - 3rem, 680px);
+        margin: 1rem auto 0;
+      }
+
+      section {
+        padding: 2rem 0;
+        border-top: 1px solid #55525c;
+      }
+
+      h2 {
+        margin: 0 0 1rem;
+        font-size: clamp(1.4rem, 3vw, 1.8rem);
+        letter-spacing: 0.5px;
+      }
+
+      section p {
+        margin: 0;
+        color: #dedee2;
+        font-size: 1.08rem;
+        line-height: 1.7;
+      }
+
+      section p + p {
+        margin-top: 1rem;
+      }
+
+      footer {
+        width: min(100% - 3rem, 680px);
+        margin: 1rem auto 0;
+        padding: 2rem 0 2.5rem;
+        border-top: 1px solid #55525c;
+        color: #d2d2d7;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      footer p + p {
+        margin-top: 0.4rem;
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          padding-right: 1.5rem;
+          padding-left: 1.5rem;
+        }
+
+        .content,
+        footer {
+          width: min(100% - 2rem, 680px);
+        }
       }
     </style>
   </head>
 
   <body>
-    <div class="hero">
+    <header class="hero">
       <img
-        src="images/logo-anvil-transparent.png"
-        alt="The Empowerment Forge"
+        src="/images/logo-anvil-transparent.png"
+        alt="The Empowerment Forge anvil logo"
+        width="620"
+        height="646"
       />
-
       <h1>The Empowerment Forge</h1>
+      <p class="tagline">Build. Learn. Create.</p>
+    </header>
 
-      <p>Build. Learn. Create.</p>
-    </div>
+    <main class="content">
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          The Empowerment Forge, LLC is an Indiana software company building
+          practical software, web applications, and business tools. This
+          website is the company’s official online presence while those
+          products are being developed.
+        </p>
+      </section>
+
+      <section aria-labelledby="vision-heading">
+        <h2 id="vision-heading">What We’re Building</h2>
+        <p>
+          Our initial focus is on useful technology for entrepreneurs, real
+          estate investors, and small businesses. The products are currently
+          in development, with an emphasis on tools that address practical
+          business needs.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p>
+          To contact The Empowerment Forge, LLC, email
+          <a href="mailto:tony@empowerment-forge.com"
+            >tony@empowerment-forge.com</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 The Empowerment Forge, LLC. All rights reserved.</p>
+      <p><a href="/privacy">Read our Privacy Policy</a>.</p>
+    </footer>
   </body>
 </html>
